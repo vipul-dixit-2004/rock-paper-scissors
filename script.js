@@ -19,11 +19,12 @@ function highlighComputer(computerChoice,color) {
 
 function resultOutput(player){
 	if(player=="player"){
+		document.querySelector(".main").style.transition=".2s";
 		document.querySelector(".main").style.background="radial-gradient(circle, rgba(0,0,0,1) 70%, rgba(132,252,70,1) 100%)";
-		document.querySelector(".main").style.transition=".2s";
+		
 	}else{
-		document.querySelector(".main").style.background="radial-gradient(circle, rgba(0,0,0,1) 70%, rgba(246,0,0,1) 100%)";
 		document.querySelector(".main").style.transition=".2s";
+		document.querySelector(".main").style.background="radial-gradient(circle, rgba(0,0,0,1) 70%, rgba(246,0,0,1) 100%)";
 		
 	}
 }
